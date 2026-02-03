@@ -32,7 +32,7 @@
         href="https://assets.checkoutchamp.com/Funnel/assets/styles/fa5b57ff-2b9f-40f9-afd4-6bd27f917220/25b86dfe-3d28-4269-9db3-97bffb59c639/app_ce2a65825f78ab344d5c.min.css"
         rel="stylesheet" srcset="">
     <link rel="shortcut icon" href="" srcset="">
-    
+
     <script
         id="pageDataScript">var pageData = { "pageViewReferenceId": "14ba62c0-5828-4b9b-8816-49f47b7a98a9", "funnelReferenceId": "d76d5d44-74ca-4268-ae3b-033b2c51b595" };</script>
     <style id="styleElement">
@@ -7356,6 +7356,23 @@
         }
     </style>
     <title>BugMD</title>
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2161810097681520');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2161810097681520&ev=PageView&noscript=1" /></noscript>
 </head>
 
 <body class="fk-web dom-pending">
@@ -7478,7 +7495,8 @@
                                                 <div data-secondsdelay="" class="each-price shipping-line-summary">
                                                     <label>Shipping:</label><span data-text="text" id="sAndHFee"
                                                         data-secondsdelay="">
-                                                        $0.00</span></div>
+                                                        $0.00</span>
+                                                </div>
                                                 <div data-secondsdelay="" class="each-price"><label>Sales Tax:
                                                     </label><span data-text="text" id="tax" data-secondsdelay="">
                                                         $0.00</span></div>
@@ -7743,7 +7761,7 @@
 
     <div data-cc-link-attribution="true"><a href="https://checkoutchamp.com" title="Powered by CheckoutChamp"></a></div>
     <script>
-        
+
 
         var dynamicCartRow = document.querySelector("tr[id='fk-dynamic-cart-row']");
         if (dynamicCartRow) {
