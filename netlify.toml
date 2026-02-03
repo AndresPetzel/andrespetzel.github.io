@@ -1,0 +1,47 @@
+[[headers]]
+  for = "/legacy-broken/checkout"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/legacy-broken/thank_you"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/legacy-broken/thank_you_tip"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/legacy-broken/upsell1"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/legacy-broken/upsell2"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/legacy-broken/upsell3"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/legacy-broken/upsell4"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/legacy-broken/upsell5"
+  [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
+  for = "/stable-implementation/checkout"
+  [headers.values]
+    Content-Type = "text/html"
+
+# Netlify Pretty URLs usually handles missing .html, but for files with NO extension on disk 
+# we need to be explicit if they aren't being picked up.

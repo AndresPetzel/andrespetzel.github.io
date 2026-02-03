@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Aug 08 2025 10:49:35 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="68946bfc5c1ac50965589d01" data-wf-site="68946bfc5c1ac50965589cf4">
+
+<head>
+  <meta charset="utf-8">
+  <title>PDP Upsell</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/pdp-upsell.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+
+  <script
+    id="pageDataScript">var pageData = { "pageViewReferenceId": "81c29b42-3d99-48b9-ad0f-f15e9936b978", "funnelReferenceId": "d76d5d44-74ca-4268-ae3b-033b2c51b595" };</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Noto Sans:100,200,300,regular,500,600,700,800,900", "Lexend:100,200,300,regular,500,600,700,800,900", "Noto Sans:regular,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic", "Roboto:100,200,300,regular,500,600,700,800,900"] } });</script>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.webp" rel="apple-touch-icon">
+  <script>
+    var edgeURL = 'https://qgdgj.bugmd.com';
+
+    (function (u) {
+      window.edgetag =
+        window.edgetag ||
+        function () {
+          (edgetag.stubs = edgetag.stubs || []).push(arguments);
+        };
+      var t = document.createElement('script');
+      t.type = 'text/javascript';
+      t.src = u;
+      t.async = true;
+      var e = document.getElementsByTagName('script')[0];
+      e.parentNode.insertBefore(t, e);
+    })(edgeURL + '/load');
+
+    (function () {
+      var url = window.location.href;
+      var userId = '';
+
+      if (url.indexOf('?') !== -1) {
+        var queryString = url.split('?')[1];
+        var params = queryString.split('&');
+
+        for (var i = 0; i < params.length; i++) {
+          var pair = params[i].split('=');
+          if (decodeURIComponent(pair[0]) === 'et_u_id') {
+            userId = decodeURIComponent(pair[1] || '');
+            break;
+          }
+        }
+      }
+
+      edgetag('init', {
+        edgeURL: edgeURL,
+        disableConsentCheck: true,
+        userId: userId,
+      });
+    })();
+
+    edgetag('tag', 'PageView');
+  </script>
+  <style>
+    .div-block-63,
+    .div-block-68,
+    .div-block-73 {
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .div-block-63::-webkit-scrollbar {
+      display: none;
+    }
+
+    .div-block-68:-webkit-scrollbar {
+      display: none;
+    }
+
+    .div-block-73:-webkit-scrollbar {
+      display: none;
+    }
+
+    .button-animation {
+      transition: none;
+      animation: buttonGrow 4.2s linear infinite;
+      box-sizing: border-box;
+    }
+
+    @keyframes buttonGrow {
+      0% {
+        box-shadow: 0 0 0 0px #fff687;
+        opacity: 1;
+      }
+
+      100% {
+        box-shadow: 0 0 0 20px #fff687;
+        opacity: 0;
+      }
+    }
+  </style>
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2161810097681520');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2161810097681520&ev=PageView&noscript=1" /></noscript>
+</head>
+
+<body class="body">
+  <div class="main-wrapper">
+    <div class="page-wrapper">
+      <div class="top-bar">
+        <div class="topbar-container">
+          <div class="logo"><img src="images/logo.svg-fill.png" loading="lazy" alt="" class="image-33"></div>
+          <div class="progress-container">
+            <div class="step-container">
+              <div class="topbar-circle"><img src="images/check.svg" loading="lazy" alt=""></div>
+              <div class="text-block">Order Placed</div>
+            </div>
+            <div class="step-container">
+              <div class="topbar-circle orange"><img src="images/clock.svg" loading="lazy" alt="" class="clock"></div>
+              <div class="text-block orange">Special Offer</div>
+            </div>
+            <div class="step-container">
+              <div class="topbar-circle grey"><img src="images/shopping-bag.svg" loading="lazy" alt=""></div>
+              <div class="text-block grey">Order Complete</div>
+              <div class="text-block grey mobile">Complete</div>
+            </div>
+            <div class="div-block">
+              <div class="line-progress">
+                <div class="div-block-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-section">
+        <div class="hero-container">
+          <div class="hero-main">
+            <div class="top-badge">
+              <div class="text-block-5">⚠️ <span class="text-span-2">IMPORTANT:</span> Don&#x27;t Leave Just Yet</div>
+            </div>
+            <div class="text-block-2">WAIT! Your Pest Protection Is Only Half Complete...</div>
+            <div class="text-block-3">You Just Took The First Step, But Pests Don&#x27;t Take Vacations. Here&#x27;s Why
+              74% Of Our Customers Upgrade To Year-Round Protection <span class="text-span">(And Save $2,060)</span>
+            </div>
+            <div class="timer">
+              <div class="text-block-4">🕐 Offer Expires In: </div>
+              <div class="w-embed w-script">
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
+                <div id="timer" class="countdown-timer">10:00</div>
+                <script>
+                  let timeLeft = 600;
+                  const timerElement = document.getElementById('timer');
+                  function updateTimer() {
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    const formattedMinutes = minutes.toString().padStart(2, '0');
+                    const formattedSeconds = seconds.toString().padStart(2, '0');
+                    timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
+                    timeLeft--;
+                    if (timeLeft < 0) {
+                      timerElement.textContent = "00:00";
+                      clearInterval(timerInterval);
+                    }
+                  }
+                  const timerInterval = setInterval(updateTimer, 1000);
+                  updateTimer();
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="yellow-banner">
+        <div>📦 We can only offer this <strong>50% discount</strong> by combining your orders. This offer expires when
+          you leave this page.</div>
+      </div>
+      <div class="problem-section">
+        <div class="problem-container">
+          <h1 class="heading">Here&#x27;s The Problem Most People Don&#x27;t Realize Until It&#x27;s Too Late...</h1>
+          <img src="images/Frame-2320.jpg" loading="lazy" sizes="(max-width: 995px) 100vw, 995px"
+            srcset="images/Frame-2320-p-500.jpg 500w, images/Frame-2320-p-800.jpg 800w, images/Frame-2320.jpg 995w"
+            alt="" class="image">
+          <div class="text-block-6">You&#x27;re Playing &quot;Pest Whack-a-Mole&quot; (And The Pests Are Winning)</div>
+          <div class="text-block-7">Right now, you&#x27;ve handled TODAY&#x27;S pest problem. But while you&#x27;re
+            reading this:</div>
+          <div class="list-cross">
+            <div class="div-block-3">
+              <div class="icon-cross"><img src="images/x-circle.svg" loading="lazy" alt="" class="image-2"></div>
+              <div class="text-block-8">Different pests are planning their next invasion (each season brings new
+                species)</div>
+            </div>
+            <div class="div-block-3">
+              <div class="icon-cross"><img src="images/x-circle.svg" loading="lazy" alt="" class="image-2"></div>
+              <div class="text-block-8">Eggs are being laid in hidden spaces (one roach = 30,000 babies per year)</div>
+            </div>
+            <div class="div-block-3">
+              <div class="icon-cross"><img src="images/x-circle.svg" loading="lazy" alt="" class="image-2"></div>
+              <div class="text-block-8">Your &quot;protected&quot; barrier is already weakening (most treatments fade in
+                30-60 days)</div>
+            </div>
+            <div class="div-block-3">
+              <div class="icon-cross"><img src="images/x-circle.svg" loading="lazy" alt="" class="image-2"></div>
+              <div class="text-block-8">Next season&#x27;s pests are completely different (and immune to what you just
+                used)</div>
+            </div>
+          </div>
+          <div class="div-block-5">
+            <div class="smallheading">The Expensive Truth</div>
+            <div class="div-block-4">
+              <div class="text-block-9">87% of homeowners who treat &quot;as needed&quot; end up calling an exterminator
+                within 6 months anyway. Average emergency call?</div>
+              <div class="text-block-10">$550</div>
+            </div>
+          </div>
+          <div class="div-block-6">
+            <div class="div-block-7">
+              <div class="text-block-13">The Scary Truth:</div>
+              <div class="text-block-12">By the time you SEE the next pest, there&#x27;s already:</div>
+              <div class="div-block-9">
+                <div class="div-block-8"><img src="images/🐜_.png" loading="lazy" alt="">
+                  <div class="text-block-11">A full colony established</div>
+                </div>
+                <div class="div-block-8"><img src="images/🥚.png" loading="lazy" alt="">
+                  <div class="text-block-11">Eggs laid throughout your home</div>
+                </div>
+                <div class="div-block-8"><img src="images/☢️.png" loading="lazy" alt="">
+                  <div class="text-block-11">Contamination in places you can&#x27;t reach</div>
+                </div>
+                <div class="div-block-8"><img src="images/🤕.png" loading="lazy" alt="">
+                  <div class="text-block-11">Health risks to your family</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-7">
+              <div class="text-block-13">The Frustrating Truth:</div>
+              <div class="text-block-12">You&#x27;ll spend the next year:</div>
+              <div class="div-block-9">
+                <div class="div-block-8"><img src="images/🏃_♀️.png" loading="lazy" alt="">
+                  <div class="text-block-11">Running to the store during infestations</div>
+                </div>
+                <div class="div-block-8"><img src="images/💸.png" loading="lazy" alt="">
+                  <div class="text-block-11">Buying different products for different pests</div>
+                </div>
+                <div class="div-block-8"><img src="images/😟.png" loading="lazy" alt="">
+                  <div class="text-block-11">Worrying what&#x27;s lurking where you can&#x27;t see</div>
+                </div>
+                <div class="div-block-8"><img src="images/🤢.png" loading="lazy" alt="">
+                  <div class="text-block-11">Exposing your family to multiple chemical treatments</div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/73197955c12bcf8a86fed2d4df5afe9ec20bb718.png" loading="lazy"
+            sizes="(max-width: 761px) 100vw, 761px"
+            srcset="images/73197955c12bcf8a86fed2d4df5afe9ec20bb718-p-500.png 500w, images/73197955c12bcf8a86fed2d4df5afe9ec20bb718.png 761w"
+            alt="" class="image-4"><img src="images/89396b2bfd77aae9da44cffd1160e938cc576e06.png" loading="lazy" alt=""
+            class="image-3"><img src="images/721c45319d8ffb6270ee533792e12d473cc39014.png" loading="lazy" alt=""
+            class="image-5">
+          <div class="text-block-14">Treating pests reactively is like only brushing your teeth AFTER cavities form.
+            It&#x27;s expensive, stressful, and never really solves the problem.</div>
+        </div><img src="images/Frame-2330.png" loading="lazy" sizes="(max-width: 780px) 100vw, 780px"
+          srcset="images/Frame-2330-p-500.png 500w, images/Frame-2330.png 780w" alt="" class="image-6">
+      </div>
+      <div class="calendar-section">
+        <div class="calendar-container">
+          <h1 class="heading">Here&#x27;s The Problem Most People Don&#x27;t Realize Until It&#x27;s Too Late...</h1>
+          <div class="text-block-15">Most People Have No Idea When Each Pest Invades...</div>
+          <div class="div-block-10">
+            <div class="calendar-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img src="images/❄️.png"
+                    loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">JANUARY-FEBRUARY:</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div class="text-block-17">While you&#x27;re cozy inside...</div>
+                <div class="div-block-15">
+                  <div class="text-block-18">🕷️ Spiders lay egg sacs (100‑400 eggs each) in your basement</div>
+                  <div class="text-block-18">🐜 Carpenter ants establish satellite colonies in your walls</div>
+                  <div class="text-block-18">🦗 Overwintering pests multiply in your attic insulation</div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img src="images/🌸.png"
+                    loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">MARCH-APRIL</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div class="text-block-17">The awakening begins...</div>
+                <div class="div-block-15">
+                  <div class="text-block-18">🐜 Ants send scouts to map your kitchen (leave pheromone trails)</div>
+                  <div class="text-block-18">🕷️ Spider eggs hatch - releasing hundreds of babies</div>
+                  <div class="text-block-18">🪳 Roaches emerge from winter hiding to breed aggressively</div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img src="images/☀️.png"
+                    loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">MAY-<br>JUNE</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div class="text-block-17">Full invasion mode...</div>
+                <div class="div-block-15">
+                  <div class="text-block-18">🦟 Mosquitoes establish breeding grounds (one becomes 1,000)</div>
+                  <div class="text-block-18">🐝 Stinging insects build nests around your home</div>
+                  <div class="text-block-18">🦟 Fleas and ticks hitchhike inside on pets and shoes</div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img src="images/☀️.png"
+                    loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">JULY-<br>AUGUST</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div class="text-block-17">Peak pest season...</div>
+                <div class="div-block-15">
+                  <div class="text-block-18">🏠 Every entry point is under assault</div>
+                  <div class="text-block-18">🦗 Cricket invasions keep you awake at night</div>
+                  <div class="text-block-18">🕸️ Spider populations explode to maximum density</div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img src="images/🍁.png"
+                    loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">SEPTEMBER-OCTOBER</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div class="text-block-17">The great migration...</div>
+                <div class="div-block-15">
+                  <div class="text-block-18">🐭 Rodents scout for winter nesting spots</div>
+                  <div class="text-block-18">🦗 Fall invaders (stink bugs, ladybugs) swarm your home</div>
+                  <div class="text-block-18">🕷️ Spiders move indoors seeking warmth and mates</div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img src="images/❄️.png"
+                    loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">NOVEMBER-DECEMBER</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div class="text-block-17">Hidden multiplication...</div>
+                <div class="div-block-15">
+                  <div class="text-block-18">🥚 Next year&#x27;s nightmare is being laid as eggs</div>
+                  <div class="text-block-18">🏠 Your walls become pest nurseries</div>
+                  <div class="text-block-18">🔄 The cycle prepares to start all over again</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-block-16">
+            <div class="text-block-19">The Shocking Reality:</div>
+            <div class="text-block-20">Without year-round protection, you&#x27;re always 30-60 days away from the next
+              invasion.</div>
+          </div>
+        </div>
+      </div>
+      <div class="upgrade-section">
+        <div class="upgrade-container"><img src="images/1748506716329_PDP49.jpg.png" loading="lazy"
+            sizes="(max-width: 640px) 100vw, 640px"
+            srcset="images/1748506716329_PDP49.jpg-p-500.png 500w, images/1748506716329_PDP49.jpg.png 640w" alt=""
+            class="image-17">
+          <div class="text-block-21">By clicking the order button below, I confirm that I have read and agree to the
+            Terms of Use and Privacy Policy. I acknowledge that my subscription will automatically renew at $140 every
+            year and my payment method will be charged according to the Order Summary on this page until I cancel. I
+            understand that I can cancel anytime through my account page or by contacting the support team.</div>
+          <div class="div-block-83">
+            <div class="button-animation"></div>
+            <button data-id="fkt-button-c38-1ac-a48" title="" align="center" value="" onclick="callMethod(event)"
+              action="submit" id="YES-button" animate="pulse" data-secondsdelay="" data-minutesdelay="" type="button"
+              replaceproductid="" size="none" quantity="" price="140" billnow="false" desktopsize="none"
+              data-text-value="YES! Protect My Home Year-Round for $11.67/Month" variantvalue="" offer="" upsell=""
+              class="btn btn-primary animated pulse yes-button w-inline-block">
+
+              <div class="text-block-22">YES! Protect My Home Year-Round for $11.67/Month</div>
+              <img src="images/arrow-right-circle.svg" loading="lazy" alt="">
+            </button>
+          </div>
+          <a href="" id="NO-button" data-id="fkt-link-60d-38a-9ea" title="*No, Thank you!" target="_self" action="route"
+            align="center" animate="none" speed="none" delay="none" loop="none" onclick="linkMethod(event)"
+            data-secondsdelay="" data-minutesdelay="" replaceproductid="" quantity="" price="" billnow="false"
+            variantvalue="" offer="" upsell="" class="no-button">
+            No thanks, I'll pass on the year-round protection.
+          </a>
+        </div>
+        <div class="bg-rotator"></div>
+      </div>
+      <div class="_4year-section-desktop">
+        <div class="_4year-container">
+          <h1 class="heading">What Year-Round Protection<br>Means For Your Family:</h1>
+          <div class="div-block-17">
+            <div class="div-block-18">
+              <div class="empty-picture"><img src="images/pic1.png" loading="lazy"
+                  sizes="(max-width: 720px) 100vw, 720px" srcset="images/pic1-p-500.png 500w, images/pic1.png 720w"
+                  alt="" class="image-8"></div>
+              <div class="div-block-20"><img src="images/calendar.svg" loading="lazy" alt="" class="calendar-icon">
+                <div class="div-block-23"><img src="images/🌸.png" loading="lazy" width="Auto" alt="" class="image-12">
+                </div>
+                <div class="div-block-29 _50"></div>
+              </div>
+              <div class="side-content-calendar">
+                <div class="text-block-24">FIRST APPLICATION (Spring)</div>
+                <div class="text-block-25">Immediate Peace of Mind</div>
+                <div class="div-block-22">
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Sleep soundly</strong> knowing your kids won&#x27;t wake up with
+                      spider bites</div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Confidently host</strong> Easter gatherings <strong>without
+                        embarrassing ant trails</strong></div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Save $550</strong> by preventing that &quot;emergency&quot;
+                      exterminator call</div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Breathe easier</strong> with essential oils instead of toxic
+                      chemicals</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-18 _2">
+              <div class="side-content-calendar">
+                <div class="text-block-24">3 MONTHS (Summer)</div>
+                <div class="text-block-25">Your Home Becomes a Fortress</div>
+                <div class="div-block-22">
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Backyard BBQs without</strong> guests swatting bugs or seeing
+                      <strong>roaches</strong>
+                    </div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Kids play freely without</strong> parents worrying about
+                      <strong>fire ant bites</strong>
+                    </div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Open windows</strong> for fresh air <strong>without inviting
+                        pests</strong> inside</div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Zero stress</strong> about what&#x27;s crawlingwhere you
+                      can&#x27;t see</div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-block-20 _2"><img src="images/calendar.svg" loading="lazy" alt="" class="calendar-icon">
+                <div class="div-block-23"><img src="images/☀️.png" loading="lazy" width="Auto" alt="" class="image-13">
+                </div>
+                <div class="div-block-29"></div>
+              </div>
+              <div class="empty-picture"><img src="images/Frame-2346.png" loading="lazy"
+                  sizes="(max-width: 646px) 100vw, 646px"
+                  srcset="images/Frame-2346-p-500.png 500w, images/Frame-2346.png 646w" alt="" class="image-9"></div>
+            </div>
+            <div class="div-block-18">
+              <div class="empty-picture"><img src="images/Frame-2348.png" loading="lazy"
+                  sizes="(max-width: 646px) 100vw, 646px"
+                  srcset="images/Frame-2348-p-500.png 500w, images/Frame-2348.png 646w" alt="" class="image-10"></div>
+              <div class="div-block-20"><img src="images/calendar.svg" loading="lazy" alt="" class="calendar-icon">
+                <div class="div-block-23"><img src="images/🍁.png" loading="lazy" width="Auto" alt="" class="image-14">
+                </div>
+                <div class="div-block-29"></div>
+              </div>
+              <div class="side-content-calendar">
+                <div class="text-block-24">6 MONTHS (Fall)</div>
+                <div class="text-block-25">Total Confidence Sets In</div>
+                <div class="div-block-22">
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>No more jumping</strong> at every dark spot on the wall</div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Basement/attic storage without fear</strong> of creepy crawlies
+                    </div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Holiday decorating without</strong> discovering pest<strong>
+                        &quot;surprises&quot;</strong></div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Hosting season</strong> with pride, <strong>not pest
+                        paranoia</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-18 _2">
+              <div class="side-content-calendar">
+                <div class="text-block-24">12 MONTHS (Full Year)</div>
+                <div class="text-block-25">Life-Changing Peace</div>
+                <div class="div-block-22">
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Forgotten what pest stress feels like</strong> - it&#x27;s just
+                      not part of your life</div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Saved $2,000+</strong> to spend on family memories, not
+                      exterminators</div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Healthier home</strong> with 365 days of chemical-free protection
+                    </div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Complete confidence</strong> that next year is already protected
+                      (auto-renewal)</div>
+                  </div>
+                  <div class="div-block-21"><img src="images/Vector.svg" loading="lazy" alt="" class="image-7">
+                    <div class="text-block-23"><strong>Friends asking</strong> how your home stays so
+                      <strong>pest-free</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-block-20 _2"><img src="images/calendar.svg" loading="lazy" alt="" class="calendar-icon">
+                <div class="div-block-23"><img src="images/❄️-1.png" loading="lazy" width="Auto" alt=""
+                    class="image-15"></div>
+                <div class="div-block-29 _50up"></div>
+              </div>
+              <div class="empty-picture"><img src="images/Frame-2349.png" loading="lazy"
+                  sizes="(max-width: 646px) 100vw, 646px"
+                  srcset="images/Frame-2349-p-500.png 500w, images/Frame-2349.png 646w" alt="" class="image-11"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="oil-vs-toxic-section">
+        <div class="vs-container">
+          <h1 class="heading">The Truth About Essential Oils vs. Toxic Pesticides</h1>
+          <div class="text-block-29">Why 92% of Parents Choose Our Essential Oil Formula Once They Know This...</div>
+          <div class="div-block-30">
+            <div class="div-block-31">
+              <div class="div-block-32">
+                <div class="text-block-31">Traditional Pesticides</div>
+              </div>
+              <div class="div-block-33">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Nervous system toxins that affect humans too</div>
+                </div>
+              </div>
+              <div class="div-block-33">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Cancer-linked chemicals (EPA classified)</div>
+                </div>
+              </div>
+              <div class="div-block-33">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Hormone disruptors especially dangerous for kids</div>
+                </div>
+              </div>
+              <div class="div-block-33">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Pet poisoning risk - thousands of cases yearly</div>
+                </div>
+              </div>
+              <div class="div-block-33">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Chemical residue lasts weeks on surfaces</div>
+                </div>
+              </div>
+              <div class="div-block-33">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Strong chemical odor lingers for days</div>
+                </div>
+              </div>
+              <div class="div-block-33">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Requires evacuation during application</div>
+                </div>
+              </div>
+              <div class="div-block-33 bottom1">
+                <div class="div-block-34"><img src="images/❌.png" loading="lazy" alt="">
+                  <div class="text-block-30">Special disposal requirements</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-block-31">
+              <div class="div-block-32 green">
+                <div class="text-block-40">Pest Defense Pro Essential Oils</div>
+              </div>
+              <div class="div-block-35 green">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">Plant-based protection that only affects pests</div>
+                </div>
+              </div>
+              <div class="div-block-35 green">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">Food-grade ingredients safe around meals</div>
+                </div>
+              </div>
+              <div class="div-block-35 green">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">Kid &amp; baby safe - no developmental risks</div>
+                </div>
+              </div>
+              <div class="div-block-35 green">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">Pet-friendly - safe for dogs, cats, birds</div>
+                </div>
+              </div>
+              <div class="div-block-35 green">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">No toxic residue - dries to safe barrier</div>
+                </div>
+              </div>
+              <div class="div-block-35 green">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">Pleasant natural scent that fades quickly</div>
+                </div>
+              </div>
+              <div class="div-block-35 green">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">Stay home while applying - no danger</div>
+                </div>
+              </div>
+              <div class="div-block-35 green bottom2">
+                <div class="div-block-36"><img loading="lazy" src="images/✅.png" alt="">
+                  <div class="text-block-32">Eco-friendly - safe for environment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-block-33">The Science Behind Our Formula:</div>
+          <div class="div-block-37">
+            <div class="div-block-39">
+              <div class="image-formula"><img src="images/Rectangle-8.png" loading="lazy" alt=""></div>
+              <div class="div-block-38">
+                <div class="text-block-35">Cedarwood Oil:</div>
+                <div class="text-block-34">Disrupts pest pheromones and dehydrates exoskeletons</div>
+              </div>
+            </div>
+            <div class="div-block-39">
+              <div class="image-formula"><img src="images/Rectangle-8-1.png" loading="lazy" alt=""></div>
+              <div class="div-block-38">
+                <div class="text-block-35">Peppermint Oil:</div>
+                <div class="text-block-34">Overwhelms pest nervous systems, repels all crawling insects</div>
+              </div>
+            </div>
+            <div class="div-block-39">
+              <div class="image-formula"><img src="images/Rectangle-8-2.png" loading="lazy" alt=""></div>
+              <div class="div-block-38">
+                <div class="text-block-35">Rosemary Oil:</div>
+                <div class="text-block-34">Natural neurotoxin to insects, harmless to mammals</div>
+              </div>
+            </div>
+            <div class="div-block-39">
+              <div class="image-formula"><img src="images/Rectangle-8-3.png" loading="lazy" alt="" class="image-22">
+              </div>
+              <div class="div-block-38">
+                <div class="text-block-35">Clove Oil:</div>
+                <div class="text-block-34">Penetrates pest egg casings, prevents reproduction</div>
+              </div>
+            </div>
+            <div class="div-block-39">
+              <div class="image-formula"><img src="images/Rectangle-8-4.png" loading="lazy" alt=""></div>
+              <div class="div-block-38">
+                <div class="text-block-35">Citronella Oil:</div>
+                <div class="text-block-34">Creates invisible barrier pests won&#x27;t cross</div>
+              </div>
+            </div><img src="images/705ea7ba6f33fbac05c39ba8c1035100ed355e8d.png" loading="lazy" alt=""
+              class="image-18"><img src="images/6a32801bf563b41ee47bb6b805c5b3e7a86c2e63.png" loading="lazy"
+              width="Auto" alt="" class="image-19">
+          </div>
+          <div class="div-block-40">
+            <div class="text-block-36"><strong>University Study Results:</strong> &quot;Essential oil formulations
+              showed 94% effectiveness compared to synthetic pesticides, with zero toxicity to humans or pets&quot; -
+              Journal of Pest Management Science</div>
+          </div><img src="images/Frame-2391-1.png" loading="lazy" alt="" class="image-21">
+          <div class="div-block-41">
+            <div class="div-block-45">
+              <div class="text-block-39">&quot;My daughter has asthma. When Orkin sprayed, she couldn&#x27;t breathe for
+                days. With <strong>Pest Defense Pro</strong>, she actually HELPS me spray! No reactions, no worry.&quot;
+              </div>
+              <div class="div-block-43">
+                <div class="text-block-38">- Amanda K.</div>
+                <div class="div-block-42"><img src="images/Vector.png" loading="lazy" alt="">
+                  <div class="text-block-37">Verified Customer</div>
+                </div>
+              </div>
+            </div><img src="images/Rectangle-9.png" loading="lazy" alt="" class="image-20">
+          </div>
+        </div>
+      </div>
+      <div class="upgrade-section _2">
+        <div class="upgrade-container"><img src="images/1748506716329_PDP49.jpg.png" loading="lazy"
+            sizes="(max-width: 640px) 100vw, 640px"
+            srcset="images/1748506716329_PDP49.jpg-p-500.png 500w, images/1748506716329_PDP49.jpg.png 640w" alt=""
+            class="image-17">
+          <div class="text-block-21 _2">By clicking the order button below, I confirm that I have read and agree to the
+            Terms of Use and Privacy Policy. I acknowledge that my subscription will automatically renew at $140 every
+            year and my payment method will be charged according to the Order Summary on this page until I cancel. I
+            understand that I can cancel anytime through my account page or by contacting the support team.</div>
+          <div class="div-block-83">
+            <div class="button-animation"></div>
+            <button data-id="fkt-button-c38-1ac-a48" title="" align="center" value="" onclick="callMethod(event)"
+              action="submit" id="YES-button" animate="pulse" data-secondsdelay="" data-minutesdelay="" type="button"
+              replaceproductid="" size="none" quantity="" price="140" billnow="false" desktopsize="none"
+              data-text-value="YES! Protect My Home Year-Round for $11.67/Month" variantvalue="" offer="" upsell=""
+              class="btn btn-primary animated pulse yes-button w-inline-block">
+
+              <div class="text-block-22">Get Safe, Essential Oil Protection for $11.67/Month</div>
+              <img src="images/arrow-right-circle.svg" loading="lazy" alt="">
+            </button>
+          </div>
+          <a href="" id="NO-button" data-id="fkt-link-60d-38a-9ea" title="*No, Thank you!" target="_self" action="route"
+            align="center" animate="none" speed="none" delay="none" loop="none" onclick="linkMethod(event)"
+            data-secondsdelay="" data-minutesdelay="" replaceproductid="" quantity="" price="" billnow="false"
+            variantvalue="" offer="" upsell="" class="no-button">
+            No thanks, I'll pass on the year-round protection.
+          </a>
+        </div>
+        <div class="bg-rotator"></div>
+      </div>
+      <div class="math-section">
+        <div class="div-block-46">
+          <h1 class="heading-2">The Math That Makes This A No-Brainer:</h1>
+          <div class="div-block-47">
+            <div class="div-block-48">
+              <div class="div-block-49">
+                <div class="text-block-41">Traditional Exterminator</div>
+              </div>
+              <div class="div-block-49">
+                <div class="text-block-42">$100-183</div>
+              </div>
+              <div class="div-block-49 text">
+                <div class="text-block-43">per month</div>
+              </div>
+            </div>
+            <div class="div-block-50">
+              <div class="div-block-49 green _85">
+                <div class="text-block-41-copy">Pest Defense Pro</div>
+              </div>
+              <div class="div-block-49 green">
+                <div class="text-block-42-copy">$11.67</div>
+              </div>
+              <div class="div-block-49 orange">
+                <div class="text-block-43-copy">per month</div>
+              </div>
+            </div><img src="images/AdobeStock_1569710625-2.png" loading="lazy" alt="" class="image-23">
+          </div>
+        </div>
+      </div>
+      <div class="options-section">
+        <div class="div-block-51" data-cc-ignore="true">
+          <h1 class="heading-3">Let&#x27;s Look At The REAL Cost of Pest Control:</h1>
+          <div class="text-block-44">What You&#x27;ll Spend Over 5 Years:</div>
+          <div class="div-block-52">
+            <div class="div-block-53">
+              <div class="text-block-47">Option 1: Traditional Exterminator</div>
+              <div class="text-block-46">
+                <div>• Year 1: $1,210 (quarterly visits)</div>
+                <div>• Year 2: $1,210 + emergency calls</div>
+                <div>• Year 3: $1,210 + price increases</div>
+                <div>• Year 4: $1,400 (rates go up)</div>
+                <div>• Year 5: $1,400 + more emergencies</div>
+              </div>
+              <div class="text-block-45">
+                5-Year Total: <strong>$6,500+</strong> 💸
+              </div>
+            </div>
+            <div class="div-block-53">
+              <div class="text-block-47">Option 2: DIY Store<strong>‑</strong>Bought Products</div>
+              <div class="text-block-46">
+                <div>• Monthly trips: $30-50 per trip</div>
+                <div>• Different products for different pests</div>
+                <div>• Trial and error (what works?)</div>
+                <div>• Emergency exterminator when DIY fails</div>
+              </div>
+              <div class="text-block-45-copy">
+                5-Year Total: <span><strong>$3,200+ (plus time &amp; stress)</strong></span>
+              </div>
+            </div>
+            <div class="green-option-copy">
+              <div>
+                <div class="text-block-47-copy">Option 3:</div>
+                <img
+                  src="https://cdn.prod.website-files.com/68946bfc5c1ac50965589cf4/689505e33da12c9db19b017e_DESIGN.svg"
+                  loading="lazy" alt="" class="image-24" />
+              </div>
+              <div class="text-block-46-copy">
+                <div>• Year 1-5: $140/year (price locked)</div>
+                <div>• Everything included</div>
+                <div>• No emergency calls needed</div>
+                <div>• No store trips</div>
+              </div>
+              <div class="text-block-45 white">
+                5-Year Total: <strong>$700</strong> ✨
+              </div>
+              <img
+                src="https://cdn.prod.website-files.com/68946bfc5c1ac50965589cf4/689506faa1e18889f8cf8a26_Rectangle%2012.png"
+                loading="lazy" alt="" class="image-25" />
+            </div>
+          </div>
+          <div class="div-block-54">
+            <div class="text-block-48">You Can Save $6,000+ Over 5 Years!</div>
+            <div class="text-block-49">That&#x27;s a family vacation to Disney World... or Hawaii... or Europe!</div>
+          </div>
+        </div>
+      </div>
+      <div class="whatyouget-section">
+        <h1 class="heading-4">Here&#x27;s EXACTLY What You Get:</h1>
+        <div class="div-block-55">
+          <div class="div-block-56"><img src="images/🎯.png" loading="lazy" alt="" class="image-26">
+            <div class="div-block-57">
+              <div class="text-block-51">Complete Pest Defense Pro System</div>
+              <div class="text-block-50">Professional-grade electric sprayer (keeps forever - $89 value alone) + 4
+                seasonal concentrate formulas (customized for your region). Each concentrate treats 2,500 sq ft.</div>
+            </div>
+            <div class="text-block-52">$280 Value</div>
+          </div>
+          <div class="div-block-56"><img src="images/📚.png" loading="lazy" alt="" class="image-26">
+            <div class="div-block-57">
+              <div class="text-block-51">Seasonal Pest Prevention PDF Guides</div>
+              <div class="text-block-50">Spring Checklist, Summer Defense Map, Fall Migration Blockers, Winter Dormancy
+                Guide</div>
+            </div>
+            <div class="text-block-52">$40 Value</div>
+          </div>
+          <div class="div-block-56"><img src="images/🚚.png" loading="lazy" alt="" class="image-26">
+            <div class="div-block-57">
+              <div class="text-block-51">FREE Express Shipping</div>
+              <div class="text-block-50">2-3 day delivery anywhere in continental US. Tracking provided immediately.
+              </div>
+            </div>
+            <div class="text-block-52">$20 Value</div>
+          </div>
+          <div class="div-block-56"><img src="images/🔒.png" loading="lazy" alt="" class="image-26">
+            <div class="div-block-57">
+              <div class="text-block-51">Lifetime Price Lock Guarantee</div>
+              <div class="text-block-50">Your $140/year price NEVER increases. Others pay $280/year.</div>
+            </div>
+            <div class="text-block-52">Priceless</div>
+          </div>
+          <div class="div-block-54-copy">
+            <div class="text-block-49-copy">Total Value: <span class="text-span-3">$370</span></div>
+            <div class="text-block-48">Your Investment Today: Just $140</div>
+          </div>
+        </div>
+      </div>
+      <div class="upgrade-section _2">
+        <div class="upgrade-container"><img src="images/1748506716329_PDP49.jpg.png" loading="lazy"
+            sizes="(max-width: 640px) 100vw, 640px"
+            srcset="images/1748506716329_PDP49.jpg-p-500.png 500w, images/1748506716329_PDP49.jpg.png 640w" alt=""
+            class="image-17">
+          <div class="text-block-21 _2">By clicking the order button below, I confirm that I have read and agree to the
+            Terms of Use and Privacy Policy. I acknowledge that my subscription will automatically renew at $140 every
+            year and my payment method will be charged according to the Order Summary on this page until I cancel. I
+            understand that I can cancel anytime through my account page or by contacting the support team.</div>
+          <div class="div-block-83">
+            <div class="button-animation"></div>
+
+            <button data-id="fkt-button-c38-1ac-a48" title="" align="center" value="" onclick="callMethod(event)"
+              action="submit" id="YES-button" animate="pulse" data-secondsdelay="" data-minutesdelay="" type="button"
+              replaceproductid="" size="none" quantity="" price="140" billnow="false" desktopsize="none"
+              data-text-value="YES! Protect My Home Year-Round for $11.67/Month" variantvalue="" offer="" upsell=""
+              class="btn btn-primary animated pulse yes-button w-inline-block">
+
+              <div class="text-block-22">Lock In My $140/Year Price Forever</div>
+              <img src="images/arrow-right-circle.svg" loading="lazy" alt="">
+            </button>
+          </div>
+          <a href="" id="NO-button" data-id="fkt-link-60d-38a-9ea" title="*No, Thank you!" target="_self" action="route"
+            align="center" animate="none" speed="none" delay="none" loop="none" onclick="linkMethod(event)"
+            data-secondsdelay="" data-minutesdelay="" replaceproductid="" quantity="" price="" billnow="false"
+            variantvalue="" offer="" upsell="" class="no-button">
+            No thanks, I'll pass on the year-round protection.
+          </a>
+
+
+        </div>
+        <div class="bg-rotator"></div>
+      </div>
+      <div class="how-slider-section">
+        <h1 class="heading-5 _60">How Pest Defense Pro Actually Works</h1>
+        <div class="div-block-69">
+          <div class="div-block-61">
+            <div class="div-block-59">
+              <div>Swipe left to see more</div>
+            </div>
+          </div>
+          <div class="div-block-67"><img src="images/Frame-2421.png" loading="lazy" alt="" class="image-29">
+            <div class="div-block-63">
+              <div class="div-block-58">
+                <div class="div-block-60">
+                  <div class="div-block-62"><img src="images/Frame-2407.png" loading="lazy" alt="" class="image-27">
+                    <div class="text-block-53">The Electric Sprayer Difference</div>
+                    <div class="text-block-54">Creates ultra-fine mist that bonds to surfaces. 3X better coverage than
+                      pump sprayers. Reaches cracks and crevices pests hide in. Battery lasts full application (USB
+                      rechargeable).</div><img src="images/Rectangle-10.png" loading="lazy" alt="">
+                  </div>
+                  <div class="div-block-62"><img src="images/Frame-2407-1.png" loading="lazy" alt="" class="image-27">
+                    <div class="text-block-53">The Barrier Forms</div>
+                    <div class="text-block-54">Essential oils create invisible shield. Lasts 90 days in all weather
+                      conditions. Repels AND eliminates on contact. Safe once dry (30 minutes).</div><img
+                      src="images/Rectangle-10_1.png" loading="lazy" alt="">
+                  </div>
+                  <div class="div-block-62"><img src="images/Frame-2407-2.png" loading="lazy" alt="" class="image-27">
+                    <div class="text-block-53">The &quot;No-Go Zone&quot;</div>
+                    <div class="text-block-54">Pests detect barrier from 10 feet away. Their nervous systems can&#x27;t
+                      handle the oils. They literally turn around and leave. Any that cross are eliminated instantly.
+                    </div><img src="images/Rectangle-1022.png" loading="lazy" alt="">
+                  </div>
+                  <div class="div-block-62 _4"><img src="images/Frame-22222.png" loading="lazy" alt="" class="image-27">
+                    <div class="text-block-53">Breaks The Breeding Cycle</div>
+                    <div class="text-block-54">Oils penetrate egg casings. Prevents new generations. Stops infestations
+                      before they start. No more &quot;surprise&quot; invasions.</div><img
+                      src="images/Rectangle-13230.png" loading="lazy" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-block-64">
+          <h1 class="heading-5">Why This Works Better Than EVERYTHING Else:</h1>
+          <div class="div-block-66">
+            <div class="div-block-59-copy">
+              <div>Swipe left to see more</div>
+            </div><img src="images/Frame-2421.png" loading="lazy" alt="" class="image-31">
+          </div>
+        </div>
+        <div class="div-block-68">
+          <div class="div-block-65"><img src="images/Table-2.png" loading="lazy"
+              sizes="(max-width: 2157px) 100vw, 2157px"
+              srcset="images/Table-2-p-500.png 500w, images/Table-2-p-800.png 800w, images/Table-2-p-1080.png 1080w, images/Table-2-p-1600.png 1600w, images/Table-2-p-2000.png 2000w, images/Table-2.png 2157w"
+              alt="" class="image-28"></div>
+        </div>
+      </div>
+      <div class="testimonial-section">
+        <div class="div-block-70">
+          <h1 class="heading-5">Why This Works Better Than EVERYTHING Else:</h1>
+          <div class="div-block-66 green">
+            <div class="div-block-59-copy">
+              <div>Swipe left to see more</div>
+            </div><img src="images/Frame-2421.png" loading="lazy" alt="">
+          </div>
+          <div class="text-block-55">Real Reviews From Verified Customers</div>
+        </div>
+        <div class="div-block-71">
+          <div class="div-block-72">
+            <div class="div-block-59 green">
+              <div class="text-block-56">Swipe left to see more</div>
+            </div><img src="images/Frame-2421-2.png" loading="lazy" alt="" class="image-30">
+          </div>
+          <div class="div-block-73">
+            <div class="div-block-60 reviews">
+              <div class="review-block"><img src="images/5-stars-→-★★★★★.png" loading="lazy" alt="">
+                <div class="text-block-57">&quot;I was spending $165 every 3 months for an exterminator. This works
+                  BETTER and I save over $2,000 a year! The scorpions that used to terrify me? Haven&#x27;t seen one in
+                  8 months.&quot;</div>
+                <div class="text-block-58">Sarah M. - Phoenix, AZ</div>
+              </div>
+              <div class="review-block"><img src="images/5-stars-→-★★★★★.png" loading="lazy" alt="">
+                <div class="text-block-57">&quot;The seasonal formulas are genius. No more spring ant invasions or fall
+                  spider parties. My wife actually said &#x27;whatever you&#x27;re doing, keep doing it&#x27; -
+                  that&#x27;s a first!&quot;</div>
+                <div class="text-block-58">Mike T. - Atlanta, GA</div>
+              </div>
+              <div class="review-block"><img src="images/5-stars-→-★★★★★.png" loading="lazy" alt="">
+                <div class="text-block-57">&quot;Love that it&#x27;s pet-safe! My dogs can play right after I spray. Try
+                  getting that from Orkin. Plus it smells like a spa, not a chemical plant.&quot;</div>
+                <div class="text-block-58">Jennifer K. - Portland, OR</div>
+              </div>
+              <div class="review-block"><img src="images/5-stars-→-★★★★★.png" loading="lazy" alt="">
+                <div class="text-block-57">&quot;Florida = bugs everywhere. I was skeptical essential oils could work
+                  here. I was WRONG. Even the palmetto bugs (flying roaches) are gone. This stuff is magic.&quot;</div>
+                <div class="text-block-58">David L. - Miami, FL</div>
+              </div>
+              <div class="review-block"><img src="images/5-stars-→-★★★★★.png" loading="lazy" alt="">
+                <div class="text-block-57">&quot;Apartment living = neighbor&#x27;s pests become your pests. Not
+                  anymore! I spray every 3 months and my place is the only pest-free unit. Neighbors keep asking my
+                  secret.&quot;</div>
+                <div class="text-block-58">Lisa R. - Chicago, IL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="upgrade-section _2">
+        <div class="upgrade-container"><img src="images/1748506716329_PDP49.jpg.png" loading="lazy"
+            sizes="(max-width: 640px) 100vw, 640px"
+            srcset="images/1748506716329_PDP49.jpg-p-500.png 500w, images/1748506716329_PDP49.jpg.png 640w" alt=""
+            class="image-17">
+          <div class="text-block-21 _2">By clicking the order button below, I confirm that I have read and agree to the
+            Terms of Use and Privacy Policy. I acknowledge that my subscription will automatically renew at $140 every
+            year and my payment method will be charged according to the Order Summary on this page until I cancel. I
+            understand that I can cancel anytime through my account page or by contacting the support team.</div>
+          <div class="div-block-83">
+
+
+
+            <button data-id="fkt-button-c38-1ac-a48" title="" align="center" value="" onclick="callMethod(event)"
+              action="submit" id="YES-button" animate="pulse" data-secondsdelay="" data-minutesdelay="" type="button"
+              replaceproductid="" size="none" quantity="" price="140" billnow="false" desktopsize="none"
+              data-text-value="YES! Protect My Home Year-Round for $11.67/Month" variantvalue="" offer="" upsell=""
+              class="btn btn-primary animated pulse yes-button w-inline-block">
+
+              <div class="text-block-22">Join Thousands Pest-Free Families</div>
+              <img src="images/arrow-right-circle.svg" loading="lazy" alt="">
+            </button>
+            <div class="button-animation _1"></div>
+          </div>
+          <a href="" id="NO-button" data-id="fkt-link-60d-38a-9ea" title="*No, Thank you!" target="_self" action="route"
+            align="center" animate="none" speed="none" delay="none" loop="none" onclick="linkMethod(event)"
+            data-secondsdelay="" data-minutesdelay="" replaceproductid="" quantity="" price="" billnow="false"
+            variantvalue="" offer="" upsell="" class="no-button">
+            No thanks, I'll pass on the year-round protection.
+          </a>
+        </div>
+        <div class="bg-rotator"></div>
+      </div>
+      <div class="you-dont-section">
+        <div class="calendar-container">
+          <h1 class="heading you-dont">What Happens <span class="text-span-4"> If You Don&#x27;t Complete </span> Your
+            Protection:</h1>
+          <h1 class="heading-6">What Happens If You <span class="text-span-4"> Don&#x27;t Complete </span> Your
+            Protection:</h1>
+          <div class="you-dont-grid">
+            <div class="you-dont-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img
+                    src="images/alert-triangle.svg" loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">Next 30 Days:</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div>
+                  <div>
+                    <ul role="list" class="list">
+                      <li class="list-item">Current treatment starts wearing off</li>
+                      <li class="list-item">Pests begin testing your barriers</li>
+                      <li class="list-item">Eggs from previous invasions start hatching</li>
+                      <li class="list-item">You&#x27;ll think &quot;maybe it&#x27;ll last longer&quot;</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="you-dont-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img
+                    src="images/alert-triangle.svg" loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">60-90 Days:</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div>
+                  <div>
+                    <ul role="list" class="list">
+                      <li class="list-item">First signs of new pest activity</li>
+                      <li class="list-item">Different species than before (seasonal)</li>
+                      <li class="list-item">Panic sets in: &quot;They&#x27;re back!&quot;</li>
+                      <li class="list-item">Rush to store for expensive sprays</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="you-dont-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img
+                    src="images/alert-triangle.svg" loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">6 Months:</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div>
+                  <div>
+                    <ul role="list" class="list">
+                      <li class="list-item">Full reinfestation likely</li>
+                      <li class="list-item">Multiple pest types simultaneously</li>
+                      <li class="list-item">$550 exterminator call</li>
+                      <li class="list-item">Harsh chemicals in your home</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="you-dont-block">
+              <div class="div-block-11">
+                <div class="div-block-12"><img src="images/calendar.png" loading="lazy" alt=""><img
+                    src="images/alert-triangle.svg" loading="lazy" alt="" class="image-16"></div>
+                <div class="div-block-13">
+                  <div class="text-block-16">1 Year Later:</div>
+                </div>
+              </div>
+              <div class="div-block-14">
+                <div>
+                  <div>
+                    <ul role="list" class="list">
+                      <li class="list-item">Spent 10X more than Pest Defense Pro</li>
+                      <li class="list-item">Still dealing with pest problems</li>
+                      <li class="list-item">Wishing you&#x27;d grabbed this deal</li>
+                      <li class="list-item">But it&#x27;s $280/year now (no special price)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-container">
+          <div class="text-block-59">SPECIAL ONE-TIME OFFER SUMMARY</div>
+          <div class="text-block-60">Upgrade to Year-Round Protection NOW and Lock In:</div>
+          <div class="div-block-74">
+            <div class="div-block-75">
+              <div class="list-summary">✅<strong>50% OFF</strong> Retail Price (Save $140)</div>
+              <div class="list-summary">✅<strong>Complete System</strong> with electric sprayer ($280 value)</div>
+              <div class="list-summary">✅<strong>4 Seasonal Formulas</strong> customized for your region</div>
+              <div class="list-summary">✅<strong>FREE Express Shipping</strong> ($20 value)</div>
+              <div class="list-summary">✅<strong>BONUS Indoor Trap Set</strong> ($30 value)</div>
+              <div class="list-summary">✅<strong>Prevention PDF Guides</strong> ($40 value)</div>
+              <div class="list-summary">✅<strong>Lifetime Price Lock</strong> at $140/year</div>
+              <div class="list-summary">✅<strong>60-Day Money-Back Guarantee</strong></div>
+            </div><img src="images/Frame-2423.jpg" loading="lazy" alt="">
+          </div>
+          <div class="div-block-76">
+            <div class="text-block-61">Total Value: <span class="text-span-5">$370</span></div>
+            <div class="text-block-62">Your Investment Today: Just $140</div>
+            <div class="text-block-63">That&#x27;s Only <strong>$11.67</strong> Per Month!</div>
+            <div class="text-block-64">(Exterminators charge $100-183 per month)</div>
+          </div><img src="images/1748506716329_PDP49.jpg-1.png" loading="lazy" sizes="(max-width: 1082px) 100vw, 1082px"
+            srcset="images/1748506716329_PDP49.jpg-1.png 500w, images/1748506716329_PDP49.jpg-1.png 800w, images/1748506716329_PDP49.jpg-1.png 1080w, images/1748506716329_PDP49.jpg-1.png 1082w"
+            alt="" class="image-32">
+          <div class="div-block-81">
+            <div class="div-block-82">
+              <div class="text-block-21 _2">By clicking the order button below, I confirm that I have read and agree to
+                the Terms of Use and Privacy Policy. I acknowledge that my subscription will automatically renew at $140
+                every year and my payment method will be charged according to the Order Summary on this page until I
+                cancel. I understand that I can cancel anytime through my account page or by contacting the support
+                team.</div>
+              <div class="div-block-83">
+
+                <button data-id="fkt-button-c38-1ac-a48" title="" align="center" value="" onclick="callMethod(event)"
+                  action="submit" id="YES-button" animate="pulse" data-secondsdelay="" data-minutesdelay=""
+                  type="button" replaceproductid="" size="none" quantity="" price="140" billnow="false"
+                  desktopsize="none" data-text-value="YES! Protect My Home Year-Round for $11.67/Month" variantvalue=""
+                  offer="" upsell="" class="btn btn-primary animated pulse yes-button w-inline-block">
+
+                  <div class="text-block-22">Join Thousands Pest-Free Families</div>
+                  <img src="images/arrow-right-circle.svg" loading="lazy" alt="">
+                </button>
+              </div>
+              <a href="" id="NO-button" data-id="fkt-link-60d-38a-9ea" title="*No, Thank you!" target="_self"
+                action="route" align="center" animate="none" speed="none" delay="none" loop="none"
+                onclick="linkMethod(event)" data-secondsdelay="" data-minutesdelay="" replaceproductid="" quantity=""
+                price="" billnow="false" variantvalue="" offer="" upsell="" class="no-button">
+                No thanks, I'll pass on the year-round protection.
+              </a>
+
+
+            </div>
+            <div>
+              <div class="text-block-65">🚨 Last Chance Decision Time:</div>
+              <div class="div-block-77">
+                <div class="div-block-78 _1">
+                  <div class="text-block-66">Option A: Hope One Treatment Lasts</div>
+                  <div class="div-block-79">
+                    <div class="text-block-67">❌ Deal with inevitable re-infestations</div>
+                    <div class="text-block-67">❌ Deal with inevitable re-infestations</div>
+                    <div class="text-block-67">❌ Deal with inevitable re-infestations</div>
+                    <div class="text-block-67">❌ Deal with inevitable re-infestations</div>
+                    <div class="text-block-67">❌ Deal with inevitable re-infestations</div>
+                  </div>
+                </div>
+                <div class="div-block-78 _2">
+                  <div class="text-block-66">Option B: Complete Your Protection Now</div>
+                  <div class="div-block-79">
+                    <div class="text-block-67">✅ Save $2,060+ this year alone</div>
+                    <div class="text-block-67">✅ Never see another pest emergency</div>
+                    <div class="text-block-67">✅ Protect with safe essential oils</div>
+                    <div class="text-block-67">✅ Set it and forget it forever</div>
+                    <div class="text-block-67">✅ Join 247,000+ protected families</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <div class="div-block-80">
+          <div class="text-block-69">Copyright (c) 2025 BugMD</div>
+          <div class="text-block-68">support@bugmd.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68946bfc5c1ac50965589cf4"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Rotator animation
+      const rotators = document.querySelectorAll('.bg-rotator');
+      rotators.forEach(rotator => {
+        const rotatorData = {
+          currentRotation: 21,
+          direction: -1,
+          rotationSpeed: 0.2,
+          maxRotation: 21,
+          minRotation: -160
+        };
+
+        function animateRotator() {
+          rotatorData.currentRotation += rotatorData.direction * rotatorData.rotationSpeed;
+
+          if (rotatorData.currentRotation <= rotatorData.minRotation) {
+            rotatorData.currentRotation = rotatorData.minRotation;
+            rotatorData.direction = 1;
+          } else if (rotatorData.currentRotation >= rotatorData.maxRotation) {
+            rotatorData.currentRotation = rotatorData.maxRotation;
+            rotatorData.direction = -1;
+          }
+
+          rotator.style.transform = `rotateZ(${rotatorData.currentRotation}deg)`;
+          requestAnimationFrame(animateRotator);
+        }
+
+        animateRotator();
+      });
+    });
+  </script>
+  <script>
+    (function () {
+      function readCookie(name) {
+        var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+        return m ? decodeURIComponent(m[1]) : undefined;
+      }
+      function setCookie(name, value, maxAgeSec) {
+        var domain = location.hostname.replace(/^www\./, '');
+        document.cookie = name + '=' + encodeURIComponent(value) +
+          ';path=/;domain=' + domain + ';samesite=lax' +
+          (maxAgeSec ? ';max-age=' + maxAgeSec : '');
+      }
+
+      // If URL has fbclid, (re)create _fbc in the correct format (SECONDS)
+      var p = new URLSearchParams(location.search);
+      var fbclid = p.get('fbclid');
+      if (fbclid) {
+        var fbc = 'fb.1.' + Math.floor(Date.now() / 1000) + '.' + fbclid;
+        setCookie('_fbc', fbc, 60 * 60 * 24 * 90);
+      }
+
+      // If _fbc exists but its timestamp is in ms, fix it to seconds
+      var fbcCookie = readCookie('_fbc');
+      if (fbcCookie) {
+        var parts = fbcCookie.split('.');
+        if (parts.length >= 4) {
+          var ts = parts[2];
+          if (/^\d{13}$/.test(ts)) { // ms -> sec
+            parts[2] = String(Math.floor(Number(ts) / 1000));
+            setCookie('_fbc', parts.slice(0, 4).join('.'), 60 * 60 * 24 * 90);
+          }
+        }
+      }
+
+      // Expose helper globally
+      window.__getFBC = function () { return readCookie('_fbc'); };
+    })();
+  </script>
+  <script>
+    function preventBack() {
+      window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () {
+      null
+    };
+  </script>
+  <script>
+    const dataUri = sessionStorage.getItem("requestUri");
+    const data = JSON.parse(sessionStorage.getItem("orderData"));
+    let salesUrl = new URL(dataUri);
+    const clickid = salesUrl.searchParams.get('clickid');
+    setCookie("rtkclickid-store", `${clickid}`, 1);
+    function setCookie(name, value, daysToLive) {
+      const date = new Date();
+      date.setTime(date.getTime() + daysToLive * 24 * 60 * 60 * 1000);
+      date.toUTCString();
+      let expires = "expires=" + date.toUTCString();
+      document.cookie = `${name}=${value}; ${expires}; path=/`;
+    }
+  </script>
+  <script>
+    let currentSelectionId = 67371
+    let currentSelectionPrice = 140.00
+    window.addEventListener('DOMContentLoaded', () => {
+      dataLayerPush("Upsell3View");
+      setUpsell(currentSelectionId)
+      const btnAccept = document.querySelectorAll('.yes-button');
+      btnAccept.forEach(item => {
+        item.addEventListener('click', () => {
+          dataLayerPush("Upsell3Sale");
+        }
+        )
+      }
+      )
+    }
+    )
+    function setUpsell(id) {
+      console.log(id);
+      const btnAdd = document.querySelectorAll('.yes-button');
+      btnAdd.forEach((btn) => {
+        btn.setAttribute('upsell', id);
+      }
+      );
+    }
+    function dataLayerPush(event) {
+      // get fbc & fbp
+
+      const fbpCookie = document.cookie.split('; ').find(cookie => cookie.startsWith('_fbp='));
+      const fbpValue = fbpCookie ? fbpCookie.split('=')[1] : null;
+      const validFormatRegex = /^fb\.1\.\d+\.\d+$/;
+      const isFbpValid = validFormatRegex.test(fbpValue);
+
+      // Check if the values are correctly formatted
+      console.log(event);
+      const data = JSON.parse(sessionStorage.getItem("totals"));
+      window.dataLayer = window.dataLayer || [];
+      let pbParams = "";
+      event.includes('Sale') ? pbParams = true : pbParams = false;
+      const convertionLabels = {
+        'Upsell3View': '',
+        'Upsell3Sale': '',
+      }
+      dataLayer.push({
+        'event': 'champEvent',
+        'champEventLabel': event,
+        'champEventId': localStorage.getItem('unique_event_id_facebook'),
+        'champProdName': 'Pest Defence',
+        'champTotal': currentSelectionPrice,
+        'champRedTrackSum': pbParams,
+        "champEmail": data.emailAddress,
+        "champPhone": data.phoneNumber,
+        "champFirstName": data.firstName,
+        "champLastName": data.lastName,
+        "champCity": data.city,
+        "champRegion": data.state,
+        "champPostalCode": data.postalCode,
+        "champCountry": data.country,
+        "champProducts": JSON.stringify([{
+          "id": currentSelectionId,
+          "quantity": 1
+        }
+        ]),
+        "fbclid": window.__getFBC() || null,
+        "fbplid": isFbpValid ? fbpValue : null,
+        'champConversionLabel': convertionLabels[event],
+        'champFacebookContentIDProduct': "VAMOOSE"
+      }
+      );
+    }
+  </script><!-- Hash Data -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    // Google Enhanced Conversions
+    function hashData(data) {
+      const hashedResult = CryptoJS.SHA256(data).toString(CryptoJS.enc.Hex);
+      return hashedResult;
+    }
+    function formatToE164(number) {
+      const cleanedNumber = number.replace(/\D/g, '');
+      return `+1${cleanedNumber}`;
+    }
+    var emailEnhancedConversions = data.emailAddress.trim().toLowerCase()
+    var phonenumberEnhancedConversions = formatToE164(data.phoneNumber.trim())
+    var firstnameEnhancedConversions = data.firstName.trim().toLowerCase()
+    var lastnameEnhancedConversions = data.lastName.trim().toLowerCase()
+    var streetEnhancedConversions = data.address1.trim().toLowerCase()
+    var cityEnhancedConversions = data.city.trim().toLowerCase()
+    var regionEnhancedConversions = data.state.trim().toLowerCase()
+    var postalcodeEnhancedConversions = data.postalCode.trim().toLowerCase()
+    var countryEnhancedConversions = data.country.trim().toLowerCase()
+    console.log(emailEnhancedConversions, firstnameEnhancedConversions, lastnameEnhancedConversions, phonenumberEnhancedConversions, streetEnhancedConversions, cityEnhancedConversions, countryEnhancedConversions, regionEnhancedConversions, postalcodeEnhancedConversions);
+  </script>
+  <script>var items = document.querySelectorAll('#iwjle');
+    for (var i = 0, len = items.length; i < len; i++) {
+      (function () {
+
+        const el = this;
+        el.addEventListener('mouseover', eventHandler);
+        const animateClasses = [
+          'pulse',
+          '',
+          '',
+        ]
+        const animateHoverClasses = [
+          '',
+          '',
+          '',
+        ]
+        const animateFilterClass = animateClasses.filter(data => data !== "");
+        const animateHoverFilterClass = animateHoverClasses.filter(data => data !== "");
+        function eventHandler(e) {
+          $('#iwjle').removeClass(animateFilterClass.join(" "));
+          $('#iwjle').css({ 'animation-delay': '' });
+          $('#iwjle').addClass(['animated', animateHoverFilterClass.join(" ")]);
+        };
+        el.addEventListener('mouseleave', mouseLeaveHandler);
+        function mouseLeaveHandler(e) {
+          $('#iwjle').removeClass(animateHoverFilterClass.join(" "));
+          $('#iwjle').addClass(animateFilterClass.join(" "));
+          if (window.location.pathname !== "blank") {
+            var minutesDelay = '0';
+            var secondsDelay = '0';
+            $('#iwjle').css({ 'animation-delay': minutesDelay > 0 ? (parseInt((minutesDelay * 60)) + parseInt(secondsDelay)) + "s" : secondsDelay !== undefined ? parseInt(secondsDelay) + "s" : "" });
+          }
+        };
+
+      }.bind(items[i]))();
+    }</script>
+  <script id="scriptData">
+    window.addEventListener('load', (function () {
+      $("#loading").hide();
+      $("body").removeClass("dom-pending");
+
+      var lazyLoadThrottleTimeout;
+      function recursiveOffsetParentTop(img) {
+        if (img.offsetParent) {
+          return img.offsetParent.offsetTop + recursiveOffsetParentTop(img.offsetParent);
+        } else {
+          return 0;
+        }
+      }
+      function lazyLoad() {
+        if (lazyLoadThrottleTimeout) {
+          clearTimeout(lazyLoadThrottleTimeout);
+        }
+        lazyLoadThrottleTimeout = setTimeout(function () {
+          const scrollTop = window.pageYOffset;
+          const buffer = 500;
+          var loaded = true;
+          //Lazy loading the images
+          var lazyLoad = [].slice.call(document.querySelectorAll(".fk-lazy"));
+          lazyLoad.forEach(function (element) {
+            if ($(element).is(':visible') && element.offsetTop + recursiveOffsetParentTop(element) < ((window.innerHeight + scrollTop) + buffer)) {
+              if (element.dataset.src) {
+                element.src = element.dataset.src;
+              }
+              element.classList.remove("fk-lazy");
+            } else {
+              loaded = false;
+            }
+          });
+          if (loaded) {
+            document.removeEventListener("scroll", lazyLoad);
+            window.removeEventListener("resize", lazyLoad);
+            window.removeEventListener("orientationChange", lazyLoad);
+          }
+        }, 20);
+      }
+
+      document.addEventListener("scroll", lazyLoad);
+      window.addEventListener("resize", lazyLoad);
+      window.addEventListener("orientationChange", lazyLoad);
+      lazyLoad();
+    }), false);
+  </script>
+
+
+  <div data-cc-link-attribution="true"><a href="https://checkoutchamp.com" title="Powered by CheckoutChamp"></a></div>
+  <script>
+
+
+    var dynamicCartRow = document.querySelector("tr[id='fk-dynamic-cart-row']");
+    if (dynamicCartRow) {
+      dynamicCartRow.style.display = "none";
+    }
+    function getAbsolutePath(url) {
+      const parts = url.split('/');
+      var size = 3;
+      if (parts[2].indexOf("thisisatestsiteonly") !== -1) {
+        size = 4;
+      }
+      return parts.slice(0, size).join("/");
+    }
+    var fkDynamicScript = document.createElement("script");
+    fkDynamicScript.type = "text/javascript";
+    fkDynamicScript.src = getAbsolutePath(window.location.href) + "/bugmdchampoffersop-vamoose-523-30-30-60-60-WOS-socialproof-ship/index.js?f=34d508";
+    document.head.appendChild(fkDynamicScript);
+  </script>
+
+
+</body>
+
+</html>

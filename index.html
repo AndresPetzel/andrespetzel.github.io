@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Disponibles - Andrés Petzel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --button-bg: #2d3748;
+            --button-hover: #3d495d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--primary);
+            color: #fff;
+        }
+
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            background: var(--button-bg);
+            color: var(--text);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            border: 1px solid transparent;
+        }
+
+        .btn:hover {
+            background: var(--button-hover);
+            border-color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .footer {
+            margin-top: 50px;
+            opacity: 0.5;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Proyectos Disponibles</h1>
+
+    <div class="grid">
+        <!-- Versión Estable -->
+        <div class="card">
+            <h2>Versión Estable (Stable)</h2>
+            <div class="button-list">
+                <a href="stable-implementation/index.html" class="btn">Checkout Page</a>
+                <a href="stable-implementation/upsell1.html" class="btn">Upsell 1</a>
+                <a href="stable-implementation/upsell2.html" class="btn">Upsell 2</a>
+                <a href="stable-implementation/upsell3.html" class="btn">Upsell 3</a>
+                <a href="stable-implementation/upsell4.html" class="btn">Upsell 4</a>
+                <a href="stable-implementation/upsell5.html" class="btn">Upsell 5</a>
+                <a href="stable-implementation/thank_you.html" class="btn">Thank You Page</a>
+                <a href="stable-implementation/thank_you_tip.html" class="btn">Thank You Tip Page</a>
+            </div>
+        </div>
+
+        <!-- Versión Anterior -->
+        <div class="card">
+            <h2>Versión Anterior (Legacy)</h2>
+            <div class="button-list">
+                <a href="legacy-broken/index.html" class="btn">Checkout Page</a>
+                <a href="legacy-broken/upsell1" class="btn">Upsell 1</a>
+                <a href="legacy-broken/upsell2" class="btn">Upsell 2</a>
+                <a href="legacy-broken/upsell3" class="btn">Upsell 3</a>
+                <a href="legacy-broken/upsell4" class="btn">Upsell 4</a>
+                <a href="legacy-broken/upsell5" class="btn">Upsell 5</a>
+                <a href="legacy-broken/thank_you" class="btn">Thank You Page</a>
+                <a href="legacy-broken/thank_you_tip" class="btn">Thank You Tip Page</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Andrés Petzel - Implementación de Idempotencia de Pixel
+    </div>
+</body>
+
+</html>
